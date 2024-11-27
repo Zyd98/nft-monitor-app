@@ -130,11 +130,11 @@ Webhooks: If the API supports webhooks, use them to receive real-time updates ab
 - Query Recent Sales: Users may want to see the most recent sales for a collection. This can be efficiently handled by indexing the timestamp column in the Sales table and querying for the latest entries.
 - Aggregate Sales Data: Users may want to see total sales volume, average price, or other aggregate metrics. Indexing the collection_id and price columns can help optimize these queries.
 - User-Specific Sales History: Users may want to see their own sales or purchases. Indexing the buyer_id and seller_id columns will make these queries faster.
-- NFT-Specific Sales History: Users may want to see the sales history of a specific NFT. Indexing the nft_id column will support these queries.
-- Real-Time Updates: For real-time dashboards, ensure that the database can handle frequent updates without locking or performance degradation. Consider using a database that supports high write throughput, like PostgreSQL or a NoSQL database like MongoDB, depending on the specific needs.
+- NFT-Specific Sales History: Users may want to see the sales history of a specific NFT. Indexing the nft_mint_address column will support these queries.
+- Real-Time Updates: For real-time dashboards, ensure that the database can handle frequent updates without locking or performance degradation. Consider using a database that supports high write throughput, like MySQL or a NoSQL database like MongoDB, depending on the specific needs.
 
 **Performance Optimization**
-- Indexes: Create indexes on frequently queried columns such as timestamp, collection_id, buyer_id, seller_id, and nft_id.
+- Indexes: Create indexes on frequently queried columns such as timestamp, collection_id, buyer_id, seller_id, and nft_mint_address.
 - Partitioning: For very large datasets, consider partitioning the Sales table by date or collection to improve query performance.
 - Caching: Use caching strategies for frequently accessed data to reduce database load and improve response times.
 
