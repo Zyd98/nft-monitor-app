@@ -1,0 +1,3 @@
+{
+  "/holder/[walletAddress]": "pages/holder/[walletAddress].js"
+}
