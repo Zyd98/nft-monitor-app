@@ -1,8 +1,6 @@
 {
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
-  "/holder": "pages/holder.js",
-  "/holder/[walletAddress]": "pages/holder/[walletAddress].js",
   "/collection": "pages/collection.js",
   "/_error": "pages/_error.js"
 }

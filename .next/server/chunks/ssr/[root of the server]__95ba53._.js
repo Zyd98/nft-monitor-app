@@ -37,11 +37,6 @@ __turbopack_esm__({
 var __TURBOPACK__imported__module__$5b$externals$5d2f$__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__ = __turbopack_import__("[externals]/ [external] (react/jsx-dev-runtime, cjs)");
 var __TURBOPACK__imported__module__$5b$externals$5d2f$__$5b$external$5d$__$28$react$2c$__cjs$29$__ = __turbopack_import__("[externals]/ [external] (react, cjs)");
 var __TURBOPACK__imported__module__$5b$externals$5d2f$__$5b$external$5d$__$2840$tanstack$2f$react$2d$query$2c$__esm_import$29$__ = __turbopack_import__("[externals]/ [external] (@tanstack/react-query, esm_import)");
-(()=>{
-    const e = new Error("Cannot find module '../styles/globals.css'");
-    e.code = 'MODULE_NOT_FOUND';
-    throw e;
-})();
 var __turbopack_async_dependencies__ = __turbopack_handle_async_dependencies__([
     __TURBOPACK__imported__module__$5b$externals$5d2f$__$5b$external$5d$__$2840$tanstack$2f$react$2d$query$2c$__esm_import$29$__
 ]);
