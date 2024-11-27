@@ -58,6 +58,7 @@ NFT Monitor App is built to help users monitor NFT sales data in real-time. It f
 # Database Schema
 
 Below is a proposed schema to efficiently store and query historical sales data, along with a plan for populating and maintaining it, and some potential use cases.
+
 **Tables**
 *Sales*
 id (Primary Key): Unique identifier for each sale.
