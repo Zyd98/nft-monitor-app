@@ -61,7 +61,7 @@ Below is a proposed schema to efficiently store and query historical sales data,
 
 **Tables**
 
-*Sales*
+- *Sales*
 
 id (Primary Key): Unique identifier for each sale.
 
@@ -86,7 +86,7 @@ block_time: Blockchain timestamp of the transaction.
 signature: Blockchain transaction signature.
 
 
-*NFTs*
+- *NFTs*
 
 mint_address (Primary Key): Unique blockchain address for each NFT.
 
@@ -98,7 +98,7 @@ image_url: URL to the NFT image.
 metadata: JSON or structured data containing additional metadata.
 
 
-*Collections*
+- *Collections*
 
 id (Primary Key): Unique identifier for each collection.
 
@@ -109,7 +109,7 @@ symbol: Symbol of the collection.
 description: Description of the collection.
 
 
-*Users*
+- *Users*
 id (Primary Key): Unique identifier for each user.
 
 wallet_address: Blockchain wallet address of the user.
@@ -117,7 +117,8 @@ wallet_address: Blockchain wallet address of the user.
 username: Optional username or alias.
 
 **Relationships**
-Sales table references NFTs, Collections, and Users tables to provide detailed information about each sale.
+
+- Sales table references NFTs, Collections, and Users tables to provide detailed information about each sale.
 
 **Populating and Updating the Database**
 - Initial Data Load: Use the Magic Eden API or similar sources to fetch historical sales data and populate the database. This can be done using a script that iterates over the API responses and inserts the data into the database.
