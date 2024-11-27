@@ -9,11 +9,11 @@
 
 # Project Description
 
-NFT Monitor App is built to help users monitor NFT sales data in real-time. It fetches data from the Magic Eden API, allowing users to view recent sales, analyze trends, and explore detailed sales history for Meekolony NFTs and collections.
+NFT Monitor App is built to help users track Meekolony NFTs listing and sales data in real-time. It fetches data from the Magic Eden API, allowing users to view recent sales, analyze trends, and explore detailed sales history for Meekolony NFTs collections.
 
 # Features
 
-- View recent listings and sales of Meekolony NFT collections.
+- View recent listings and sales of Meekolony NFTs collections.
 - Listings and sales update every 5 minutes.
 - View NFTs by inputting the wallet address.
 - Responsive design for seamless use on various devices.
