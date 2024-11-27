@@ -110,6 +110,7 @@ description: Description of the collection.
 
 
 - *Users*
+  
 id (Primary Key): Unique identifier for each user.
 
 wallet_address: Blockchain wallet address of the user.
