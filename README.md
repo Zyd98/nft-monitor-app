@@ -61,61 +61,62 @@ Below is a proposed schema to efficiently store and query historical sales data,
 
 **Tables**
 
-- *Sales*
+*Sales*
 
-id (Primary Key): Unique identifier for each sale.
+- id (Primary Key): Unique identifier for each sale.
 
-transaction_id: Unique identifier for the transaction.
+- transaction_id: Unique identifier for the transaction.
 
-collection_id: Foreign key referencing the id in the Collections table, identifying the NFT collection.
+- collection_id: Foreign key referencing the id in the Collections table, identifying the NFT collection.
 
-nft_mint_address: Foreign key referencing the mint_address in the NFTs table, identifying the specific NFT sold.
+- nft_mint_address: Foreign key referencing the mint_address in the NFTs table, identifying the specific NFT sold.
 
-buyer_id: Foreign key referencing the id in the Users table, identifying the buyer.
+- buyer_id: Foreign key referencing the id in the Users table, identifying the buyer.
 
-seller_id: Foreign key referencing the id in the Users table, identifying the seller.
+- seller_id: Foreign key referencing the id in the Users table, identifying the seller.
 
-price: Sale price of the NFT.
+- price: Sale price of the NFT.
 
-currency: Currency used for the transaction (e.g., SOL, ETH).
+- currency: Currency used for the transaction (e.g., SOL, ETH).
 
-timestamp: Date and time of the sale.
+- timestamp: Date and time of the sale.
 
-block_time: Blockchain timestamp of the transaction.
+- block_time: Blockchain timestamp of the transaction.
 
-signature: Blockchain transaction signature.
-
-
-- *NFTs*
-
-mint_address (Primary Key): Unique blockchain address for each NFT.
-
-collection_id: Foreign key referencing the id in the Collections table, associating the NFT with its collection.
-name: Name of the NFT.
-
-image_url: URL to the NFT image.
-
-metadata: JSON or structured data containing additional metadata.
+- signature: Blockchain transaction signature.
 
 
-- *Collections*
+*NFTs*
 
-id (Primary Key): Unique identifier for each collection.
+- mint_address (Primary Key): Unique blockchain address for each NFT.
 
-name: Name of the collection.
-
-symbol: Symbol of the collection.
-
-description: Description of the collection.
-
-
-- *Users*
+- collection_id: Foreign key referencing the id in the Collections table, associating the NFT with its collection.
   
-id (Primary Key): Unique identifier for each user.
+- name: Name of the NFT.
 
-wallet_address: Blockchain wallet address of the user.
+- image_url: URL to the NFT image.
 
-username: Optional username or alias.
+- metadata: JSON or structured data containing additional metadata.
+
+
+*Collections*
+
+- id (Primary Key): Unique identifier for each collection.
+
+- name: Name of the collection.
+
+- symbol: Symbol of the collection.
+
+- description: Description of the collection.
+
+
+*Users*
+  
+- id (Primary Key): Unique identifier for each user.
+
+- wallet_address: Blockchain wallet address of the user.
+
+- username: Optional username or alias.
 
 **Relationships**
 
