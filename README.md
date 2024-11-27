@@ -36,7 +36,7 @@ NFT Monitor App is built to help users monitor NFT sales data in real-time. It f
 2. **Install dependencies:**
 
    ```bash
-   npm install
+   yarn install
    ```
 
 3. **Set up environment variables:**
