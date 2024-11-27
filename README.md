@@ -85,6 +85,7 @@ block_time: Blockchain timestamp of the transaction.
 
 signature: Blockchain transaction signature.
 
+
 *NFTs*
 
 mint_address (Primary Key): Unique blockchain address for each NFT.
@@ -96,6 +97,7 @@ image_url: URL to the NFT image.
 
 metadata: JSON or structured data containing additional metadata.
 
+
 *Collections*
 
 id (Primary Key): Unique identifier for each collection.
@@ -105,6 +107,7 @@ name: Name of the collection.
 symbol: Symbol of the collection.
 
 description: Description of the collection.
+
 
 *Users*
 id (Primary Key): Unique identifier for each user.
